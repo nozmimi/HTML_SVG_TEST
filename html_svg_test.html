@@ -42,22 +42,7 @@
             <svg width="1000" height="1000">
                 <rect id="testRect" width=400 height="100" fill="#000080" stroke="#87ceeb">
             </svg>
-
-            <script>
-
-                document.getElementById("svg_change").addEventListener("click", function(){
-                var x = document.getElementById("svg_height").value;
-                var y = document.getElementById("svg_width").value;
-                    console.log(x,y);
-
-                var poly = document.getElementById("testRect");
-                    console.log(poly)
-                    poly.setAttribute("fill", "#ff69b4"); // 緑色で塗りつぶす
-                    poly.setAttribute("stroke", "#dc143c");    // 青色の線にする
-                    poly.setAttribute("height", x);
-                    poly.setAttribute("width", y);
-                    }, true);
-            </script>
+            <script src="rect_js.js"></script>
         </div>
 
     <!-- Bootstrapを適用するための記述 -->
