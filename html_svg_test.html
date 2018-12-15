@@ -2,28 +2,37 @@
 <html lang="jp">
     <head>
         <meta charset="utf-8">
-        <!-- Bootstrapを適用するための記述 -->
+        
+        <!-- Bootstrap -->        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <!-- 外部ファイル読み込み -->
+        <link rel="stylesheet" href="style.css" type="text/css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+        
         <title>テスト</title>
     </head>
 
     <body>
-
+      
         <div class="container">
           <br>
-            <form>
+            <form class="text-center">
               縦：<input type="number" name="" value="32" id="svg_height">
               横：<input type="number" name="" value="30" id="svg_width" >
               <input type="button" value="更新" id="svg_change">
             </form>
           <hr>
-          <svg width="1000" height="1000">
-            <rect id="tote_bag1" width=300 height="320" fill="#000080" stroke="#87ceeb">
+        </div>
+        
+        <div class = "container mt-1 text-center">
+          <svg width="800"height="800" class="bg-white">
+            <rect id="totobag1_inside" x="10" y="10" width="280" height="300" stroke-width="1" stroke="red" fill="pink"/>
+            <rect id="totobag1_outside" x="0" y="0" width=300 height="320" fill="none" stroke="#000000" stroke-width="2">
           </svg>
           <script src="./js/rect_js.js"></script>
         </div>
+
 
     <!-- Bootstrapを適用するための記述 -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
